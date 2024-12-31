@@ -46,6 +46,7 @@
     <servlet-name>ImgurRedirect</servlet-name>
     <url-pattern>/i/*</url-pattern>
   </servlet-mapping>
+<!-- 
   <servlet>
     <description/>
     <display-name>GitHubAuthServlet</display-name>
@@ -57,15 +58,6 @@
     <url-pattern>/github2</url-pattern>
   </servlet-mapping>
   <servlet>
-    <display-name>LogServlet</display-name>
-    <servlet-name>LogServlet</servlet-name>
-    <servlet-class>com.mxgraph.online.LogServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>LogServlet</servlet-name>
-    <url-pattern>/log</url-pattern>
-  </servlet-mapping>
-    <servlet>
     <description/>
     <display-name>MSGraphAuthServlet</display-name>
     <servlet-name>MSGraphAuthServlet</servlet-name>
@@ -84,6 +76,37 @@
   <servlet-mapping>
     <servlet-name>GoogleAuthServlet</servlet-name>
     <url-pattern>/google</url-pattern>
+  </servlet-mapping>
+    <servlet>
+    <description/>
+    <display-name>GitlabAuthServlet</display-name>
+    <servlet-name>GitlabAuthServlet</servlet-name>
+    <servlet-class>com.mxgraph.online.GitlabAuthServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>GitlabAuthServlet</servlet-name>
+    <url-pattern>/gitlab</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description/>
+    <display-name>DropboxAuthServlet</display-name>
+    <servlet-name>DropboxAuthServlet</servlet-name>
+    <servlet-class>com.mxgraph.online.DropboxAuthServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DropboxAuthServlet</servlet-name>
+    <url-pattern>/dropbox</url-pattern>
+  </servlet-mapping>
+
+-->
+  <servlet>
+    <display-name>LogServlet</display-name>
+    <servlet-name>LogServlet</servlet-name>
+    <servlet-class>com.mxgraph.online.LogServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LogServlet</servlet-name>
+    <url-pattern>/log</url-pattern>
   </servlet-mapping>
   <servlet>
     <description/>
@@ -108,26 +131,6 @@
   <servlet-mapping>
     <servlet-name>ExportProxyServlet</servlet-name>
     <url-pattern>/service/*</url-pattern>
-  </servlet-mapping>
-  <servlet>
-    <description/>
-    <display-name>GitlabAuthServlet</display-name>
-    <servlet-name>GitlabAuthServlet</servlet-name>
-    <servlet-class>com.mxgraph.online.GitlabAuthServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>GitlabAuthServlet</servlet-name>
-    <url-pattern>/gitlab</url-pattern>
-  </servlet-mapping>
-  <servlet>
-    <description/>
-    <display-name>DropboxAuthServlet</display-name>
-    <servlet-name>DropboxAuthServlet</servlet-name>
-    <servlet-class>com.mxgraph.online.DropboxAuthServlet</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>DropboxAuthServlet</servlet-name>
-    <url-pattern>/dropbox</url-pattern>
   </servlet-mapping>
   <mime-mapping>
     <extension>css</extension>
